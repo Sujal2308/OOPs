@@ -1,5 +1,8 @@
 package Interfaces;
 
 public interface interface01 {
-    public abstract void displayMessage();
+     int age = 100;
+     void displayMessage();
+     void makeSound();
+
 }

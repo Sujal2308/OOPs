@@ -4,6 +4,7 @@ package NonAccessModifiers;
      //Static fields
      static boolean isRechargable = false;
 
+
 //     static abstract void sound(); static + abstract = illegal comb
     public abstract void sound(); // abstract method
 
