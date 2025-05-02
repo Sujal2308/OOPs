@@ -106,3 +106,16 @@ Ex: Every java class is example of encapsulation
             this.balance = amount
      }
 }
+
+// Tightly Encapsulated Class :
+- Aisa class jisme jitne bhi fields ho voh sab final rehene ko hona
+tab hum bolenge ki humara class TEC
+- If a parent class is not TEC then its sub classes can never be TEC
+
+//Method Signatures
+- In java , A method signature consists of "method name + arguments type"
+- Note that return type is not a part of MSignature.
+- Method Signature is used by compiler to resolve method calls.
+- JVM maintains a method table where each and every method signature
+persist within a class.
+- Two methods of same class must have distinct signatures
