@@ -10,10 +10,10 @@ public class MethodHiding {
     /*
     Note :
     1) Method Hiding : Method resolution is taken care by compiler
-    based on reference type
+    based on reference type . Both methods must be static
 
     2) Method Overriding : Here method resolution is taken care by
-    JVM based on runtime object type
+    JVM based on runtime object type . Both methods must be non-static
      */
     public static void main(String[] args) {
         MethodHiding.m1();
