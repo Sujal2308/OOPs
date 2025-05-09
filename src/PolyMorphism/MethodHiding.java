@@ -1,6 +1,11 @@
 package PolyMorphism;
 
 public class MethodHiding {
+
+    String name;
+    MethodHiding(String name){
+        this.name = name;
+    }
     /*
      Take very special care : Static methods can't be overridden as
      non-static and vice versa but what if both are static ???
@@ -19,8 +24,9 @@ public class MethodHiding {
         MethodHiding.m1();
         C5.m1();
 
-        MethodHiding MH = new C5();
+        MethodHiding MH = new C5("sujal");
         MH.m1();
+        System.out.println(MH.name); // sujal
 
     }
     static void m1(){
@@ -33,5 +39,8 @@ class C5 extends MethodHiding{
 //    }
     static void m1(){
         System.out.println("Child static method");
+    }
+    C5(String name){
+        super(name);
     }
 }
