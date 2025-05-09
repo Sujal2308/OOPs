@@ -119,3 +119,34 @@ tab hum bolenge ki humara class TEC
 - JVM maintains a method table where each and every method signature
 persist within a class.
 - Two methods of same class must have distinct signatures
+
+//🚀🧑🏻‍🚀 Method Overriding
+- Also called as Runtime Polymorphism , late Binding , Dynamic polymorphism
+- Condition for method-overriding : Method Signature must be same.
+- In simple words ,  when child class is not satisfied with the parent
+class method implementation and hence child class provides its own version
+(implementation)of same method defined in parent class
+
+Note :
+- Static methods can't be overridden because if it is static then not
+associated with objects but runtime polymorphism focuses on object type
+- return type can be or can't be same(co-variant return)
+
+
+// Runtime time Polymorphism :
+- When method calls are resolved at runtime by the object type and not
+the reference type
+
+// Compile Time Polymorphism
+- When Multiple methods have the same name but different parameter lists,
+  and the method call is resolved at compile time based on arguments.
+
+// Covariance return type :
+- Only applicable for objects and not primitives(int , float ,etc)
+- Return type of the overriding method (subclass) must be a subclass of the
+return type of overridden method (parent class)
+
+
+// Hashcode :  Every object has a unique id maintained by jvm
+ex: Object obj = new Object().hashcode()
+
