@@ -1,4 +1,4 @@
-package JAVA15;
+package JAVA15.Enums;
 
 public class EnumsInJava02 {
     // we can happily declare enums inside a class

@@ -1,4 +1,4 @@
-package JAVA15;
+package JAVA15.Enums;
 
 public enum Day {
     MONDAY,TUESDAY,WEDNESDAY,FRIDAY,SATURDAY,SUNDAY;

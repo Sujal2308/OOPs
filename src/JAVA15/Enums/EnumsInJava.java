@@ -1,4 +1,4 @@
-package JAVA15;
+package JAVA15.Enums;
 
 import java.util.Arrays;
 
