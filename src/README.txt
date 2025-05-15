@@ -56,7 +56,7 @@ is taken care by parent constructor only
 
 //📍 Note that two identical classNames are not allowed in same package
 //🤩 The abstract class can have static void main method no problem
-//☠️😭 Illegal Method Combination is abstract :
+//☠️😭 Illegal Method Combination in abstract :
 - static + abstract
 - final + abstract (we know abstract method is overriden if it is final then no chance)
 
@@ -126,6 +126,7 @@ persist within a class.
 - In simple words ,  when child class is not satisfied with the parent
 class method implementation and hence child class provides its own version
 (implementation)of same method defined in parent class
+- This concept is only valid for extended classes
 
 Note :
 - Static methods can't be overridden because if it is static then not
@@ -149,4 +150,22 @@ return type of overridden method (parent class)
 
 // Hashcode :  Every object has a unique id maintained by jvm
 ex: Object obj = new Object().hashcode()
+
+//! Enums : Enumerations (group of related things)
+- Introduced in 1.5V
+- It's main objective is to group the set of constants under a single name
+Without Enums:
+`class A{
+      final String DAY1 = "SUNDAY";
+      final String DAY2 = "MONDAY"
+      final String DAY3 = "TUESDAY"
+      .
+      .
+      // since constants can't be reassigned throughout the program so
+      // nobody is allowed to change the value
+}
+- suppose there are 100 constants for these we have to give 100 names
+- So Enums provide a way out to group all these constants under single name
+
+
 

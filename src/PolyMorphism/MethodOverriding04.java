@@ -3,8 +3,8 @@ package PolyMorphism;
 public class MethodOverriding04 {
     /* Make sure you can't minimize the scope of overriding methods
     but you can happily extend the scope meaning if parent method is
-    public then you can't make it private , default , protected but you
-    can do vice versa
+    public then you can't make it private , default , protected in child class
+    but you can do vice versa
      */
 
     public static void main(String[] args) {
