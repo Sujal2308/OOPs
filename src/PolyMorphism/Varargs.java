@@ -11,6 +11,8 @@ public class Varargs {
 
         C7 childRef = new C7();
         System.out.println(childRef.num(10));
+
+
     }
     int num (int... a){
         return 10;
