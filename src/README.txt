@@ -166,6 +166,11 @@ Without Enums:
 }
 - suppose there are 100 constants for these we have to give 100 names
 - So Enums provide a way out to group all these constants under single name
+- Java enums can implement any no of interfaces but can't be extended
+- Enum is basically the special class behind the scenes which is final by default
+- Enum also contains fields(class and instance) , methods , constructors , constants unlike
+enum in C++
+- Enums are treated same way as class but more restricted
 
 
 
