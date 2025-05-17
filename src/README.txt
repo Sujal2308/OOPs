@@ -171,6 +171,7 @@ Without Enums:
 - Enum also contains fields(class and instance) , methods , constructors , constants unlike
 enum in C++
 - Enums are treated same way as class but more restricted
+- In enums all the constants are bydefault public , final and static
 
 
 
