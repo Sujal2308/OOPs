@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class ARRAYS {
     public static void main(String[] args){
 
-        int[] nums2 = {1,1,2,3,3,4};
+        int[] nums2 = {5,6,1,2,5,1};
+        int[] nums3 = Arrays.copyOf(nums2,nums2.length);
         Arrays.sort(nums2);
 
         int count = 0;
@@ -18,7 +19,7 @@ public class ARRAYS {
         System.out.println(len);
         int[] newArr = new int[len];
         int k = 0;
-        for(int i : nums2){
+        for(int i : nums3){
             boolean check = ifPresent(newArr ,i);
             if(!check){
                 newArr[k] = i;
@@ -27,8 +28,6 @@ public class ARRAYS {
         }
 
         System.out.println(Arrays.toString(newArr));
-
-
 
     }
 
@@ -40,4 +39,6 @@ public class ARRAYS {
         }
         return false;
     }
+
+
 }
