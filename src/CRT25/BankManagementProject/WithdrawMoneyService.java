@@ -11,10 +11,14 @@ public class WithdrawMoneyService {
         }
         System.out.print("Enter Amount: ");
         int amount = sc.nextInt();
-        if(amount>CustomerData.balance){
-            System.out.println("Sorry, Insufficient Balance!!!");
-            return;
-        }
+            InsufficientBalance b = new InsufficientBalance("insufficient");
+            try{
+                b.checkBalance(amount);
+            }catch (InsufficientBalance e){
+                System.out.println(e.getMessage());
+                return;
+            }
+
         CustomerData.balance-=amount;
         System.out.println("Confirm the transaction '1' for yes '0' for no");
         int confirmation = sc.nextInt();
