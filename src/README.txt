@@ -174,4 +174,32 @@ enum in C++
 - In enums all the constants are bydefault public , final and static
 
 
+--- Interface:
+- Bydefault all methods are public and abstract
+- all variables are public , static , final
+- Interface does not 100% abstraction since we can declare static method,
+default method after java 8.
+- Interface reference can hold its implemented class object only
+condition is it's 100% implemented and not be abstract
+- Similarly abstract class can hold its extended class objects
+bas shart itni he ki voh fully implemented hona
+
+---Note:
+A class can extend other class and implement 1 or more interfaces
+at a time
+
+syntax:
+class A extends B implements A,B,....{
+
+}
+
+Note: --- If A class is implementing 2 interfaces but both have
+some common method so we can override it but what method will be
+called depends on the Interface reference.
+
+//--- Errors vs Exceptions
+-- Both happen at runtime
+-- error is not associated with compile error
+
+
 
