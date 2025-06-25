@@ -45,5 +45,14 @@ public class ArrayList02 {
         //! SORT OP (List itself doesn't have inbuild method but the
         //!Collection (parent) interface has some static helper methods for all collections classes)
         Collections.sort(newList01);
+
+        //! Trim OP:
+        newList01.trimToSize(); //? trim the capacity to actual size
+
+
+        //! Custom increasing capacity
+        newList01.ensureCapacity(5);
+        //* when no of items exceeds the initial capacity (10)
+        //* the new capacity increases by (old capacity + 5)
     }
 }
