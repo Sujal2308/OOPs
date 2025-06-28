@@ -12,6 +12,8 @@ public class LinkedList01 {
     //! add and delete op nearly taking O(1)
     //! But not great for accessing data : O(n)
 
+    //! Note : LinkedList doesn't occupy continuous memory locations unlike arraylist
+
     public static void main(String[] args){
 
         //? Creation of linked-list;
